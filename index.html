@@ -29,6 +29,40 @@
 
 
 <body>
+  <script>
+  const analyzeButton = document.querySelector(".analyze-button");
+  const researchInput = document.querySelector(".research-input input");
+  const researchSelect = document.querySelector(".research-select");
+
+  analyzeButton.addEventListener("click", function () {
+
+    const value = researchInput.value.trim();
+    const tool = researchSelect.value;
+
+    if (!value) {
+      researchInput.focus();
+      researchInput.placeholder = "Please enter a website URL or keyword...";
+      return;
+    }
+
+    if (tool === "website") {
+      window.location.href =
+        "website-research.html?url=" + encodeURIComponent(value);
+    }
+
+    else if (tool === "keyword") {
+      window.location.href =
+        "keyword-research.html?keyword=" + encodeURIComponent(value);
+    }
+
+    else if (tool === "analysis") {
+      window.location.href =
+        "seo-analysis.html?url=" + encodeURIComponent(value);
+    }
+
+  });
+  </script>
+  
 
   <!-- =========================
        HEADER
