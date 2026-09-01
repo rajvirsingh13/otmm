@@ -1,125 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>OTMM — SEO Research & Analysis Tools</title>
+  <title>OTMM — Website Research, Keyword Research & SEO Analysis</title>
 
   <meta
     name="description"
-    content="OTMM provides professional website research, keyword research and SEO analysis tools to help you understand and improve your website."
+    content="OTMM is a professional SEO research platform for website research, keyword research and SEO analysis."
   >
 
   <meta
     name="keywords"
-    content="OTMM, website research, keyword research, SEO analysis, SEO tools, website SEO checker"
+    content="OTMM, website research, keyword research, SEO analysis, SEO research tool, website SEO checker, keyword research tool"
   >
 
   <meta name="robots" content="index, follow">
+
+  <meta name="theme-color" content="#06101f">
 
   <link rel="canonical" href="https://otmm.vercel.app/">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
+
   <header>
+
     <div class="container nav">
 
-      <a href="/" class="logo">
+      <a href="/" class="logo" aria-label="OTMM Home">
+
         <span class="logo-icon">O</span>
+
         <span>OTMM</span>
+
       </a>
 
-      <nav>
+
+      <nav aria-label="Main navigation">
+
         <a href="/">Home</a>
+
         <a href="#tools">Tools</a>
+
         <a href="#about">About</a>
+
       </nav>
 
-      <a href="#tools" class="nav-button">Get Started</a>
+
+      <a href="#research" class="nav-button">
+        Get Started
+      </a>
 
     </div>
+
   </header>
 
 
+
   <main>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
 
     <section class="hero">
 
       <div class="container hero-content">
 
+
         <div class="hero-text">
 
+
           <div class="badge">
-            ● All-in-one SEO Research Platform
+            ● Professional SEO Research Platform
           </div>
+
 
           <h1>
             SEO Research
             <span>Made Simpler.</span>
           </h1>
 
+
           <p>
-            Research websites, discover valuable keywords and analyze
-            SEO performance — all in one place.
+            Research your website, discover valuable keywords,
+            and analyze your SEO performance — all in one place.
           </p>
 
-          <div class="hero-buttons">
-            <a href="#tools" class="primary-button">
-              Explore Tools →
-            </a>
 
-            <a href="#tools" class="secondary-button">
-              Start Free
-            </a>
+          <!-- MAIN RESEARCH BOX -->
+
+          <div class="research-box" id="research">
+
+
+            <div class="research-input">
+
+              <span class="input-icon">⌕</span>
+
+              <input
+                type="text"
+                placeholder="Enter website URL or keyword..."
+                aria-label="Website URL or keyword"
+              >
+
+            </div>
+
+
+            <select
+              aria-label="Select research tool"
+              class="research-select"
+            >
+
+              <option value="website">
+                Website Research
+              </option>
+
+              <option value="keyword">
+                Keyword Research
+              </option>
+
+              <option value="analysis">
+                SEO Analysis
+              </option>
+
+            </select>
+
+
+            <button
+              type="button"
+              class="analyze-button"
+            >
+              Analyze →
+            </button>
+
+
           </div>
+
 
           <div class="trust">
+
             <span>✓ Free to start</span>
-            <span>✓ Fast research</span>
+
+            <span>✓ No credit card</span>
+
             <span>✓ Mobile friendly</span>
-          </div>
-
-        </div>
-
-
-        <div class="dashboard-preview">
-
-          <div class="dashboard-top">
-            <strong>OTMM</strong>
-            <span>SEO Dashboard</span>
-          </div>
-
-          <div class="dashboard-cards">
-
-            <div class="stat-card">
-              <small>SEO Score</small>
-              <strong>82%</strong>
-            </div>
-
-            <div class="stat-card">
-              <small>Keywords</small>
-              <strong>1,245</strong>
-            </div>
-
-            <div class="stat-card">
-              <small>Opportunities</small>
-              <strong>28</strong>
-            </div>
 
           </div>
 
-          <div class="chart">
-            <div class="chart-title">SEO Performance</div>
-
-            <div class="chart-line">
-              ╱╲___╱╲____╱╲
-            </div>
-          </div>
 
         </div>
 
@@ -128,93 +167,202 @@
     </section>
 
 
-    <section id="tools" class="tools-section">
+
+    <!-- =========================
+         TOOLS
+    ========================== -->
+
+    <section
+      id="tools"
+      class="tools-section"
+    >
 
       <div class="container">
+
 
         <div class="section-heading">
 
           <span>OTMM TOOLS</span>
 
           <h2>
-            Powerful SEO Tools
+            Research. Analyze. Improve.
           </h2>
 
           <p>
-            Everything you need to research and understand your website.
+            Powerful tools to understand your website,
+            find better keywords and discover SEO opportunities.
           </p>
 
         </div>
 
 
+
         <div class="tools-grid">
 
 
+          <!-- WEBSITE RESEARCH -->
+
           <article class="tool-card">
 
-            <div class="tool-icon">⌕</div>
 
-            <h3>Website Research</h3>
+            <div class="tool-icon">
+              ⌕
+            </div>
+
+
+            <h3>
+              Website Research
+            </h3>
+
 
             <p>
-              Discover which keywords your website ranks for,
-              ranking positions, search volume and estimated organic traffic.
+              Enter a website URL to discover its ranking
+              keywords, positions, search volume and
+              estimated organic traffic.
             </p>
 
+
             <ul>
-              <li>Ranking keywords</li>
-              <li>Keyword positions</li>
-              <li>Search volume</li>
-              <li>Organic traffic estimates</li>
+
+              <li>
+                Ranking keywords
+              </li>
+
+              <li>
+                Google ranking positions
+              </li>
+
+              <li>
+                Monthly search volume
+              </li>
+
+              <li>
+                Estimated organic traffic
+              </li>
+
+              <li>
+                Top ranking pages
+              </li>
+
             </ul>
 
-            <a href="#">Research Website →</a>
+
+            <a href="#research">
+              Research Website →
+            </a>
+
 
           </article>
 
 
+
+          <!-- KEYWORD RESEARCH -->
+
           <article class="tool-card">
 
-            <div class="tool-icon">⌕</div>
 
-            <h3>Keyword Research</h3>
+            <div class="tool-icon">
+              #
+            </div>
+
+
+            <h3>
+              Keyword Research
+            </h3>
+
 
             <p>
-              Find valuable keyword ideas, related searches,
-              search intent and content opportunities.
+              Find valuable keyword ideas, search volume,
+              difficulty, search intent and opportunities
+              for your content.
             </p>
 
+
             <ul>
-              <li>Keyword ideas</li>
-              <li>Search volume</li>
-              <li>Keyword difficulty</li>
-              <li>Search intent</li>
+
+              <li>
+                Keyword ideas
+              </li>
+
+              <li>
+                Search volume
+              </li>
+
+              <li>
+                Keyword difficulty
+              </li>
+
+              <li>
+                Search intent
+              </li>
+
+              <li>
+                Related keywords
+              </li>
+
             </ul>
 
-            <a href="#">Research Keywords →</a>
+
+            <a href="#research">
+              Research Keywords →
+            </a>
+
 
           </article>
 
 
+
+          <!-- SEO ANALYSIS -->
+
           <article class="tool-card">
 
-            <div class="tool-icon">✓</div>
 
-            <h3>SEO Analysis</h3>
+            <div class="tool-icon">
+              ✓
+            </div>
+
+
+            <h3>
+              SEO Analysis
+            </h3>
+
 
             <p>
-              Analyze your website's SEO health and discover
-              important problems with actionable recommendations.
+              Analyze your website's SEO health and
+              discover important issues with clear,
+              actionable recommendations.
             </p>
 
+
             <ul>
-              <li>SEO score</li>
-              <li>Technical SEO</li>
-              <li>On-page SEO</li>
-              <li>Actionable recommendations</li>
+
+              <li>
+                Overall SEO score
+              </li>
+
+              <li>
+                Technical SEO checks
+              </li>
+
+              <li>
+                On-page SEO
+              </li>
+
+              <li>
+                Meta tags analysis
+              </li>
+
+              <li>
+                SEO recommendations
+              </li>
+
             </ul>
 
-            <a href="#">Analyze Website →</a>
+
+            <a href="#research">
+              Analyze Website →
+            </a>
+
 
           </article>
 
@@ -226,17 +374,123 @@
     </section>
 
 
-    <section id="about" class="about-section">
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================== -->
+
+    <section class="how-section">
 
       <div class="container">
 
+
+        <div class="section-heading">
+
+          <span>HOW OTMM WORKS</span>
+
+          <h2>
+            Simple SEO Research
+          </h2>
+
+          <p>
+            Get useful SEO information in a few simple steps.
+          </p>
+
+        </div>
+
+
+
+        <div class="steps-grid">
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              01
+            </div>
+
+            <h3>
+              Enter your data
+            </h3>
+
+            <p>
+              Enter your website URL or the keyword
+              you want to research.
+            </p>
+
+          </div>
+
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              02
+            </div>
+
+            <h3>
+              Choose a tool
+            </h3>
+
+            <p>
+              Select Website Research, Keyword Research
+              or SEO Analysis.
+            </p>
+
+          </div>
+
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              03
+            </div>
+
+            <h3>
+              Get insights
+            </h3>
+
+            <p>
+              OTMM will show useful data and
+              recommendations to help improve your SEO.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section
+      id="about"
+      class="about-section"
+    >
+
+      <div class="container">
+
+
         <div class="about-box">
 
-          <span>WHY OTMM?</span>
+
+          <span>
+            WHY OTMM?
+          </span>
+
 
           <h2>
             Turn SEO data into useful decisions.
           </h2>
+
 
           <p>
             OTMM is being built to make website research,
@@ -244,51 +498,114 @@
             faster and easier to understand.
           </p>
 
+
         </div>
 
       </div>
 
     </section>
 
+
   </main>
 
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
+
 
     <div class="container footer-content">
 
+
       <div>
+
         <div class="logo">
-          <span class="logo-icon">O</span>
-          <span>OTMM</span>
+
+          <span class="logo-icon">
+            O
+          </span>
+
+          <span>
+            OTMM
+          </span>
+
         </div>
+
 
         <p>
           SEO research and analysis made simpler.
         </p>
+
       </div>
 
-      <div>
-        <strong>Tools</strong>
-        <a href="#tools">Website Research</a>
-        <a href="#tools">Keyword Research</a>
-        <a href="#tools">SEO Analysis</a>
-      </div>
+
 
       <div>
-        <strong>Company</strong>
-        <a href="#about">About</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+
+        <strong>
+          Tools
+        </strong>
+
+
+        <a href="#research">
+          Website Research
+        </a>
+
+
+        <a href="#research">
+          Keyword Research
+        </a>
+
+
+        <a href="#research">
+          SEO Analysis
+        </a>
+
       </div>
+
+
+
+      <div>
+
+        <strong>
+          Company
+        </strong>
+
+
+        <a href="#about">
+          About
+        </a>
+
+
+        <a href="#">
+          Privacy
+        </a>
+
+
+        <a href="#">
+          Terms
+        </a>
+
+      </div>
+
 
     </div>
+
+
 
     <div class="copyright">
+
       © 2026 OTMM. All rights reserved.
+
     </div>
+
 
   </footer>
 
+
 </body>
+
 </html>
