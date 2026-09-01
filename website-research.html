@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Website Research Tool | OTMM</title>
+
+  <meta
+    name="description"
+    content="Research your website rankings, keywords, search volume and organic traffic with OTMM Website Research."
+  >
+
+  <link rel="canonical" href="https://otmm.vercel.app/website-research.html">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="/" class="logo">
+      <span class="logo-icon">O</span>
+      <span>OTMM</span>
+    </a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/#tools">Tools</a>
+      <a href="/#about">About</a>
+    </nav>
+
+    <a href="/#tools" class="nav-button">Get Started</a>
+
+  </div>
+</header>
+
+
+<main>
+
+  <section class="research-page">
+
+    <div class="container">
+
+      <div class="research-header">
+
+        <span class="section-label">
+          WEBSITE RESEARCH
+        </span>
+
+        <h1>
+          Research Your Website
+        </h1>
+
+        <p>
+          Discover the keywords your website ranks for,
+          Google positions, search volume and estimated
+          organic traffic.
+        </p>
+
+      </div>
+
+
+      <div class="research-box">
+
+        <label for="website">
+          Website URL
+        </label>
+
+        <div class="research-input">
+
+          <input
+            id="website"
+            type="url"
+            placeholder="https://example.com"
+            autocomplete="url"
+          >
+
+          <button type="button" id="researchButton">
+            Research Website →
+          </button>
+
+        </div>
+
+        <p class="input-note">
+          Enter the full URL of the website you want to research.
+        </p>
+
+      </div>
+
+
+      <div id="researchMessage" class="research-message"></div>
+
+
+      <!-- Results will appear here later -->
+
+      <section id="results" class="results-section">
+
+        <div class="results-header">
+          <span class="section-label">
+            RESEARCH RESULTS
+          </span>
+
+          <h2>Website Overview</h2>
+
+          <p id="resultWebsite"></p>
+        </div>
+
+
+        <div class="result-cards">
+
+          <div class="result-card">
+            <span>Organic Keywords</span>
+            <strong>—</strong>
+          </div>
+
+          <div class="result-card">
+            <span>Estimated Traffic</span>
+            <strong>—</strong>
+          </div>
+
+          <div class="result-card">
+            <span>Top Keywords</span>
+            <strong>—</strong>
+          </div>
+
+        </div>
+
+
+        <div class="keywords-box">
+
+          <div class="box-heading">
+            <h2>Ranking Keywords</h2>
+            <span>Google Rankings</span>
+          </div>
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <thead>
+                <tr>
+                  <th>Keyword</th>
+                  <th>Position</th>
+                  <th>Search Volume</th>
+                  <th>URL</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td colspan="4">
+                    Real keyword data will appear here.
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+      <div class="logo">
+        <span class="logo-icon">O</span>
+        <span>OTMM</span>
+      </div>
+
+      <p>
+        SEO research and analysis made simpler.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 OTMM. All rights reserved.
+  </div>
+
+</footer>
+
+
+<script>
+
+const button = document.getElementById("researchButton");
+const input = document.getElementById("website");
+const message = document.getElementById("researchMessage");
+const results = document.getElementById("results");
+const resultWebsite = document.getElementById("resultWebsite");
+
+
+button.addEventListener("click", function () {
+
+  const website = input.value.trim();
+
+  if (!website) {
+
+    message.textContent =
+      "Please enter a website URL.";
+
+    message.className =
+      "research-message error";
+
+    results.style.display = "none";
+
+    return;
+  }
+
+
+  try {
+
+    const url = new URL(website);
+
+    if (
+      url.protocol !== "http:" &&
+      url.protocol !== "https:"
+    ) {
+      throw new Error();
+    }
+
+  } catch {
+
+    message.textContent =
+      "Please enter a valid website URL, for example https://example.com";
+
+    message.className =
+      "research-message error";
+
+    results.style.display = "none";
+
+    return;
+  }
+
+
+  message.textContent =
+    "Website accepted. Real SEO data will be connected in the next step.";
+
+  message.className =
+    "research-message success";
+
+
+  resultWebsite.textContent =
+    website;
+
+
+  results.style.display =
+    "block";
+
+});
+
+</script>
+
+</body>
+</html>
