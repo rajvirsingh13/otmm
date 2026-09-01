@@ -579,3 +579,315 @@ footer {
     grid-column: auto;
   }
   }
+
+/* ================================
+   WEBSITE RESEARCH PAGE
+================================ */
+
+.research-page {
+  background: #f7f9fc;
+  min-height: calc(100vh - 76px);
+  padding: 90px 0 110px;
+}
+
+.research-header {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  color: #1769ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.research-header h1 {
+  margin: 0 0 18px;
+  font-size: clamp(38px, 6vw, 58px);
+  line-height: 1.05;
+  color: #101828;
+  letter-spacing: -2px;
+}
+
+.research-header p {
+  margin: 0 auto;
+  max-width: 650px;
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* Research input box */
+
+.research-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 15px 40px rgba(16, 24, 40, 0.06);
+}
+
+.research-box label {
+  display: block;
+  margin-bottom: 12px;
+  color: #101828;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.research-input {
+  display: flex;
+  gap: 12px;
+}
+
+.research-input input {
+  flex: 1;
+  min-width: 0;
+  height: 56px;
+  padding: 0 18px;
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  outline: none;
+  background: #ffffff;
+  color: #101828;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.research-input input:focus {
+  border-color: #1769ff;
+  box-shadow: 0 0 0 4px rgba(23, 105, 255, 0.10);
+}
+
+.research-input button {
+  height: 56px;
+  padding: 0 25px;
+  border: 0;
+  border-radius: 12px;
+  background: #1769ff;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.research-input button:hover {
+  background: #0f5ce0;
+  transform: translateY(-1px);
+}
+
+.input-note {
+  margin: 12px 0 0;
+  color: #98a2b3;
+  font-size: 13px;
+}
+
+
+/* Messages */
+
+.research-message {
+  max-width: 900px;
+  margin: 18px auto 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: none;
+}
+
+.research-message.error {
+  display: block;
+  background: #fff1f3;
+  border: 1px solid #fecdca;
+  color: #b42318;
+}
+
+.research-message.success {
+  display: block;
+  background: #ecfdf3;
+  border: 1px solid #abefc6;
+  color: #067647;
+}
+
+
+/* Results */
+
+.results-section {
+  max-width: 1100px;
+  margin: 75px auto 0;
+  display: none;
+}
+
+.results-header {
+  margin-bottom: 25px;
+}
+
+.results-header h2 {
+  margin: 0 0 8px;
+  color: #101828;
+  font-size: 30px;
+}
+
+.results-header p {
+  margin: 0;
+  color: #667085;
+}
+
+
+/* Result cards */
+
+.result-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.result-card {
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.result-card span {
+  display: block;
+  margin-bottom: 12px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.result-card strong {
+  color: #101828;
+  font-size: 30px;
+}
+
+
+/* Keywords table */
+
+.keywords-box {
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.box-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.box-heading h2 {
+  margin: 0;
+  color: #101828;
+  font-size: 20px;
+}
+
+.box-heading span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 18px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eaecf0;
+  font-size: 14px;
+}
+
+th {
+  background: #f9fafb;
+  color: #475467;
+  font-weight: 700;
+}
+
+td {
+  color: #667085;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .research-page {
+    padding: 55px 0 80px;
+  }
+
+  .research-header {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .research-header h1 {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .research-header p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .research-box {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .research-input {
+    flex-direction: column;
+  }
+
+  .research-input input,
+  .research-input button {
+    width: 100%;
+  }
+
+  .research-input button {
+    height: 54px;
+  }
+
+  .result-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .results-section {
+    margin-top: 55px;
+  }
+
+  .results-header h2 {
+    font-size: 26px;
+  }
+
+  .box-heading {
+    padding: 20px;
+  }
+
+}
